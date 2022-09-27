@@ -1,0 +1,10 @@
+.single__page{
+    margin: 50px 20%;
+    align-items: center;
+}
+.single__page img{
+    width: 100%;
+    margin: 20px 0;
+    height: 500px;
+    align-items: center;
+}
