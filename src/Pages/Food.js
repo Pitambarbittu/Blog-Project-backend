@@ -1,4 +1,4 @@
-import React, { useContext,useEffect,useState } from 'react'
+import React, { useEffect,useState } from 'react'
 
 // import { store } from './Details'
 import Card from '../Component/Card'
@@ -12,7 +12,7 @@ const Food = () => {
 
     useEffect(()=>{
       const getData=async()=>{
-          const data=await axios.get('http://localhost:8000/');
+          const data=await axios.get('https://blog-app-backend-node.herokuapp.com/api/bolly');
           setDetail(data.data);
       }
       getData();

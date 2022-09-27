@@ -1,4 +1,4 @@
-import React, { useContext,useEffect,useState } from 'react'
+import React, {useEffect,useState } from 'react'
 import { Link } from 'react-router-dom'
 import Card from '../Component/Card'
 import CardHome from '../Component/CardHome'
@@ -13,7 +13,7 @@ const Home = () => {
 
     useEffect(()=>{
       const getData=async()=>{
-          const data=await axios.get('http://localhost:8000/');
+          const data=await axios.get('https://blog-app-backend-node.herokuapp.com/api/bolly');
           setDetail(data.data);
       }
       getData();
